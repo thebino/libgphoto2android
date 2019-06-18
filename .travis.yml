@@ -1,0 +1,76 @@
+language: android
+
+# 
+jdk:
+- oraclejdk8
+
+# Ubuntu 16.04 LTS (Xenial Xerus)
+dist: xenial
+
+# Environment variables
+env:
+  global:
+    - ANDROID_SDK_HOME=$HOME/android-sdk
+    - NDK=$ANDROID_SDK_HOME/ndk/20.0.5594570/
+    - GRADLE_USER_HOME=$HOME/.gradle
+    - HOST_TAG=darwin-x86_64
+    - TOOLCHAIN=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/$HOST_TAG
+    - AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
+    - AS=$TOOLCHAIN/bin/aarch64-linux-android-as
+    - CC=$TOOLCHAIN/bin/aarch64-linux-android21-clang
+    - CXX=$TOOLCHAIN/bin/aarch64-linux-android21-clang++
+    - LD=$TOOLCHAIN/bin/aarch64-linux-android-ld
+    - RANLIB=$TOOLCHAIN/bin/aarch64-linux-android-ranlib
+    - STRIP=$TOOLCHAIN/bin/aarch64-linux-android-strip
+
+before_cache:
+  # Do not cache a few Gradle files/directories (see https://docs.travis-ci.com/user/languages/java/#Caching)
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    # Android SDK
+    - $HOME/android-sdk
+
+    # Gradle dependencies
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+    # Android build cache (see http://tools.android.com/tech-docs/build-cache)
+    - $HOME/.android/build-cache
+
+# android components required to build code
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-29.0.0
+
+    # The SDK version used to compile your project
+    - android-28
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+    - sys-img-armeabi-v7a-android-26
+
+# Configurations to set up Android NDK
+before_install:
+    - rm -rf $HOME/android-ndk-r20
+    - curl -L https://dl.google.com/android/repository/android-ndk-r20-linux-x86_64.zip -O
+    - unzip -oq android-ndk-r20-linux-x86_64.zip
+    - rm android-ndk-r20-linux-x86_64.zip
+    - export PATH=$PATH:${ANDROID_NDK_HOME}
+    - export ANDROID_NDK_HOME=$HOME/android-ndk-r2
+    - export GRADLE_USER_HOME=$HOME/.gradle
+    - export HOST_TAG=darwin-x86_64
+    - export TOOLCHAIN=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/$HOST_TAG
+    - export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
+    - export AS=$TOOLCHAIN/bin/aarch64-linux-android-as
+    - export CC=$TOOLCHAIN/bin/aarch64-linux-android21-clang
+    - export CXX=$TOOLCHAIN/bin/aarch64-linux-android21-clang++
+    - export LD=$TOOLCHAIN/bin/aarch64-linux-android-ld
+    - export RANLIB=$TOOLCHAIN/bin/aarch64-linux-android-ranlib
+    - export STRIP=$TOOLCHAIN/bin/aarch64-linux-android-strip
+
+script: ./gradlew --no-daemon --parallel lintDebug testDebug
