@@ -1,0 +1,17 @@
+2007-12-30  Marcus Meissner  <marcus@jet.franken.de>
+
+	* *.[ch]: Fixed signedness warnings, use unsigned char*
+	  more consistently.
+
+2002-07-30  Lutz Müller <lutz@users.sourceforge.net>
+
+	* rs232.c: Change != GP_OK to < GP_OK.
+
+2001-03-25  Marcus Meissner <marcus@jet.franken.de>
+	
+	* *: forward ported from gphoto 0.4.3.
+	  
+	  I doesnt work for me due to USB interrupt problems which
+	  will hopefully clear up in the future.
+	  
+	  Someone please test if you have a serial cable.

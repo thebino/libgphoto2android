@@ -1,0 +1,93 @@
+2012-01-12  Theodore Kilgore <kilgota@auburn.edu>
+	* README.jl2005c: updated.
+	* library.c: Sakar 94009 Hello Kitty added. Yet another Vivitar Freelance
+	discovered in the wild. Looks different from the others. Not listed
+	separately.
+
+2012-01-12  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Jazwares Star Wars camera added.
+
+2011-06-20  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Sakar 88067 Dora the Explorer camera added.
+
+2010-04-28  Theodore Kilgore <kilgota@auburn.edu>
+	* README.jl2005c: minor cleanup.
+	* library.c: Sakar 88601 Nickelodeon iCarly camera added.
+
+2010-12-26  Marcus Meissner <marcus@jet.franken.de>
+
+	* jl2005bcd_decompress.c: Dynamically allocate the out and
+	jpeg_stripe buffers, such large buffers are not liked by the
+	kernel.
+
+2010-04-28  Theodore Kilgore <kilgota@auburn.edu>
+	* README.jl2005c: updated.
+	* README.jl2005bcd-compression: updated, new copy of wiki page.
+	* jl2005c.[c,h]: jl2005c_delete_all() added.
+	* library.c: delete_all_func() added.
+
+2010-04-24  Theodore Kilgore <kilgota@auburn.edu>
+	* jl2005bcd_decompress.c: GP_DEBUG() replaces printf()
+
+2010-04-19  Theodore Kilgore <kilgota@auburn.edu>
+	* README.jl2005c: revised.
+	* README.jl2005bcd-compression: added.
+	* img_enhance.[c,h]: added.
+	* jl2005bcd_decompress.[c,h]: added. Decompresses data, autodetects
+		thumbnails if present in raw data, can also process the
+		thumbnails.
+	* jpeg_memsrcdest.[c,h]: added (helper files for decompression).
+		NOTE: Decompression algorithm is completely solved. Camlib
+		should be added as "standard" part of libgphoto2.
+
+2010-04-18  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Yet another camera found.
+
+2010-04-14  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Yet another camera found.
+
+2010-04-13  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Lots of cameras added to the camera list.
+
+2009-04-16  Theodore Kilgore <kilgota@auburn.edu>
+	* README.jl2005c: Updated.
+
+2008-07-11  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Listing for Argus Bean Sprout added, found
+		     by T.K.
+
+2008-05-20  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Listing for Sakar Sticker Wizard no. 59379 added, found
+		     by Niklas Peinecke <n.peinecke@web.de>
+
+2008-05-12  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Listing for Sakar clipshot no. 1169x added.
+
+2008-01-06  Theodore Kilgore <kilgota@auburn.edu>
+	* *.[c,h]:   The camera of Patrick Simmons is determined to be a 
+		     JL2005D. Support is introduced for distinguishing the 
+		     B, C, and D versions in the places where that is needed. 
+		     Support is added for downloading an arbitrary photo from
+		     the list of photos in the camera. 
+		     NOTE: All these cameras use compression, and how to 
+		     decompress is still unknown. Thus, raw files only. 
+
+
+2007-12-28  Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Added support for "Amazing Spiderman" reported by 
+		     Victor Hodge <vhodge@sympatico.ca> and for 
+		     Sakar no. 75379 reported by 
+		     Patrick Simmons <linuxrocks123@netscape.net> and for
+		     Sakar Kidz-Cam no. 88379 reported by 
+		     Martin Laberge <mlsoft@videotron.ca>. 
+	* *.[c,h]:   Introduced changes to give unified support to both 
+		     JL2005C and JL2005B in the same functions. 
+		     NOTE: All these cameras use compression, and how to 
+		     decompress is still unknown. 
+
+2007-09-04  Theodore Kilgore <kilgota@auburn.edu>
+
+	* *.[c,h]: First check-in of experimental driver code. Nothing 
+		   much works exactly right. Driver will download data 
+		   without freezing the camera, and that's about it. 
+

@@ -200,7 +200,7 @@ fabric.properties
 # Mobile Tools for Java (J2ME)
 
 # Package Files #
-*.jar
+# *.jar
 *.nar
 *.zip
 *.tar.gz

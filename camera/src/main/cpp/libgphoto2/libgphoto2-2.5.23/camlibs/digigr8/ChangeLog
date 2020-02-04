@@ -1,0 +1,178 @@
+2012-01-12   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Digital Blue Barbie Camera DC150 added.
+	* README.*: Revisions.
+
+2011-06-20   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Cobra Digital Camera DC150 added.
+
+2010-12-17   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Aries Digital Keychain Camera, ITEM 128986 added.
+
+2010-12-17   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Lego Bionicle added. New Product number 0x9051.
+	* README.9051: Added.
+
+2010-05-16   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Stop & Shop, camera, UPC product code 87096, added.
+	Reported by Adam Rubin, Adam <adam707@verizon.net>
+
+2010-03-16   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: attempt to name output file abandoned 
+	in camera_capture_preview()
+
+2010-03-12   Theodore Kilgore <kilgota@auburn.edu>
+	* digi_postprocess.c: improvements in digi_first_decompress()
+
+2009-05-16   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: camera_manual() updated to mention new disney pix micro.
+
+2009-05-10   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: The disney pix micro reported by Adam Piggs also reported
+	by Roman Kononov <kononov@ftml.net>. delete_all_func() support added for 
+	this camera. delete_all_func() must also check if camera is initialized.
+	Credit comment removed, information moved here. Credits go in the 
+	ChangeLog file, not in the middle of the code.
+	* digigr8.c: improvements to digi_delete_all()
+	* README.9052: Added, to describe the new camera.
+	* digi_postprocess.c: indentation fixes. 
+
+
+2008-11-22   Marcus Meissner <marcus@jet.franken.de>
+
+	* library.c: Added another version of the disney pix micro, reported
+	  by Adam Piggs <adam@piggz.co.uk>
+
+2008-05-11   Theodore Kilgore <kilgota@auburn.edu>
+	* README.913D: References to nonexistent README.digigr8 corrected. 
+
+2008-04-22   Theodore Kilgore <kilgota@auburn.edu>  
+	* digi_postprocess.c: white_balance() added 
+	* library.c: gp_ahd_interpolate() used instead of gp_bayer_interpolate()
+		     white_balance() hooked up. 
+		     
+2008-01-23   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: camera_capture_preview() revised to be in line with recent
+	revisions of gphoto2. Also digi_init() is now not called unless needed,
+	because camera_capture_preview() does not need it. Functions which need
+	it now check init_done and ask for digi_init() if init_done is still 0.
+	* digigr8.c: init_done parameter is set now to 1 in digi_init().
+	* digigr8.h: init_done parameter added to CameraPrivateLibrary.
+
+2008-01-22   Theodore Kilgore <kilgota@auburn.edu>  
+	* digi_postprocess.c: Fixed memory leak in second-stage decompression
+	function. 
+	* README.*: Refers to the raw file converter, added today in 
+	gphoto/trunk/playground/raw_converters/sq_raw_converter 
+
+2008-01-21   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: Raw files now carry a 16 byte footer consisting of the 
+	allocation table's line for the corresponding photo. This is done to
+	facilitate development of a standalone raw processor; information is 
+	now saved in the raw file concerning the compression and resolution 
+	settings, as well as certain information which may become useful for 
+	doing color balance, brightness, and contrast adjustments. 
+	* README.digigr8: Renamed README.905C.
+	* README.9050: Split from README.digigr8.
+
+
+2007-12-27   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: Added Jazz JDC9, reported by 
+	Victor Hodge <vhodge@sympatico.ca>.
+
+2007-12-23   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: Added Sakar no. 92045 Spiderman, reported by 
+	Martin Laberge <mlsoft@videotron.ca>.
+
+2007-10-16   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: Several cameras from Sakar added to list.
+
+2007-09-04   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: ZINA Mini Digital Keychain Camera, reported by 
+	 Alvin Austin <alvin.austin@gmail.com>
+
+2007-08-24   Theodore Kilgore <kilgota@auburn.edu>  
+	* library.c: Suprema Digital Keychain Camera added, which has 
+	new product ID 0x913D, and is able to delete individual photos. 
+	* digigr8.c: changes required here, too, to support individual 
+	photo deletion. 
+
+
+2007-07-23   Theodore Kilgore <kilgota@auburn.edu>
+	* README.digigr8: Notes on how to change the capture-preview 
+	resolution setting added. 
+
+2007-07-16   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: "Disney pix micro" camera supports "delete all."
+	Also, digigr8 cameras will do capture_preview. These two functions added.
+	0x9050 cameras need to be distinguished from 0x905C cameras. 
+	* digigr8.c: camera functions to support deletion and capture.
+	* digigr8.h: necessary changes. 
+
+2007-07-12   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: "Disney pix micro" camera, 0x2770:0x9050, works 
+	with this driver. Added it. 
+
+
+2007-06-25   Theodore Kilgore <kilgota@auburn.edu>
+	* digi_postprocess.c: removal of superfluous variables. 
+	* digigr8.c: signedness warnings fixed
+	* library.c: ditto 
+
+
+2007-03-28   Theodore Kilgore <kilgota@auburn.edu>
+
+	* digi_postprocess.c: small improvements to decompression algorithm.
+	* library.c: small improvements to decompression algorithm.
+
+2007-03-28   Theodore Kilgore <kilgota@auburn.edu>
+
+	* digi_postprocess.c: a decompression algorithm is installed. 
+	* digigr8.c: small changes to accommodate decompression
+	* library.c: small changes in get_file_func() to accommodate 
+	use of decompression.
+	* digigr8.h: new functions added for stage 1 and stage 2 decompression
+	* README.digigr8: updated to describe new functionality
+
+2006-12-13   Theodore Kilgore <kilgota@auburn.edu>
+
+	* digigr8.c: removed superfluous function digi_read_data()..
+
+
+
+2006-06-22   Marcus Meissner  <marcus@jet.franken.de>
+
+	* library.c: Added Praktica Slimpix, reported by
+	  Gervase Markham.
+          See: http://sourceforge.net/mailarchive/message.php?msg_id=20703116
+
+2006-03-26   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Added Vivitar Vivicam35, reported by self.
+
+
+2005-12-31  Hubert Figuiere  <hub@figuiere.net>
+
+	* library.c: Added Nexxtech Mini Digital Camera
+	reported by Ken Kennedy
+
+2005-12-29   Theodore Kilgore <kilgota@auburn.edu>
+
+	* digigr8.c: GP_MODULE "didigr8" -> GP_MODULE "digigr8"
+
+2005-12-29   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Added DC-N130t, reported by 
+		Thierry Leconte <f4dwv@users.sourceforge.net>
+	* README: Some updates. 	
+
+2005-12-22   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Added two cameras.
+		Soundstar TDC-35 reported by Patrice Mandin
+		<mandin.patrice@wanadoo.fr>
+		Che-Ez Snap SNAP-U reported by  Lou
+		<lou@fixit.nospammail.net>
+
+2005-12-05   Theodore Kilgore <kilgota@auburn.edu>
+
+	First check-in.

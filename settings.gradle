@@ -1,2 +1,4 @@
 include ':app'
-include ':gphoto2'
+
+// contains the source code and CMake build script for the libgphoto2 library.
+include ':camera'

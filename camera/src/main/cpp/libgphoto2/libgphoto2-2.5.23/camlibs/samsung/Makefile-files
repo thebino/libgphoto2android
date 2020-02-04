@@ -1,0 +1,9 @@
+# -*- Makefile -*-
+
+EXTRA_LTLIBRARIES += samsung.la
+EXTRA_DIST += samsung/ChangeLog
+
+samsung_la_SOURCES = samsung/samsung.c
+samsung_la_LDFLAGS = $(camlib_ldflags)
+samsung_la_DEPENDENCIES = $(camlib_dependencies)
+samsung_la_LIBADD = $(camlib_libadd)

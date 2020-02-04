@@ -1,0 +1,581 @@
+# Swedish translation of libgphoto2_port
+# Copyright © 2000-2016 Free Software Foundation, Inc.
+# This file is distributed under the same license as the libgphoto2 package.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007.
+# Andreas Hyden <a.hyden@cyberpoint.se> 2000.
+# Stefan Björnelund <stefanb@Update.UU.SE>, 2002.
+# Sverker Wiberg <sverkerw@update.uu.se>, 2002.
+# Sebastian Rasmussen <sebras@gmail.com>, 2015, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgphoto2_port 2.5.10\n"
+"Report-Msgid-Bugs-To: gphoto-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2019-05-04 15:58+0200\n"
+"PO-Revision-Date: 2016-03-24 19:38+0100\n"
+"Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: libgphoto2_port/gphoto2-port-info-list.c:411
+msgid "Generic Port"
+msgstr "Allmän port"
+
+#: libgphoto2_port/gphoto2-port-result.c:58
+msgid "No error"
+msgstr "Inget fel"
+
+#: libgphoto2_port/gphoto2-port-result.c:60
+msgid "Unspecified error"
+msgstr "Ospecificerat fel"
+
+#: libgphoto2_port/gphoto2-port-result.c:62
+msgid "I/O problem"
+msgstr "In-/ut-problem"
+
+#: libgphoto2_port/gphoto2-port-result.c:64
+msgid "Bad parameters"
+msgstr "Felaktiga parametrar"
+
+#: libgphoto2_port/gphoto2-port-result.c:66
+msgid "Unsupported operation"
+msgstr "Operationen stöds inte"
+
+#: libgphoto2_port/gphoto2-port-result.c:68
+msgid "Fixed limit exceeded"
+msgstr "Fast gräns överstigen"
+
+#: libgphoto2_port/gphoto2-port-result.c:70
+msgid "Timeout reading from or writing to the port"
+msgstr "Timeout vid läsning från eller skrivning till porten"
+
+#: libgphoto2_port/gphoto2-port-result.c:72
+msgid "Serial port not supported"
+msgstr "Serieporten stöds inte"
+
+#: libgphoto2_port/gphoto2-port-result.c:74
+msgid "USB port not supported"
+msgstr "USB-porten stöds inte"
+
+#: libgphoto2_port/gphoto2-port-result.c:76
+msgid "Unknown port"
+msgstr "Okänd port"
+
+#: libgphoto2_port/gphoto2-port-result.c:78
+msgid "Out of memory"
+msgstr "Slut på minne"
+
+#: libgphoto2_port/gphoto2-port-result.c:80
+msgid "Error loading a library"
+msgstr "Fel vid inläsning av ett bibliotek"
+
+#: libgphoto2_port/gphoto2-port-result.c:82
+msgid "Error initializing the port"
+msgstr "Fel vid initiering av porten"
+
+#: libgphoto2_port/gphoto2-port-result.c:84
+msgid "Error reading from the port"
+msgstr "Fel vid läsning från porten"
+
+#: libgphoto2_port/gphoto2-port-result.c:86
+msgid "Error writing to the port"
+msgstr "Fel vid skrivning till porten"
+
+#: libgphoto2_port/gphoto2-port-result.c:88
+msgid "Error updating the port settings"
+msgstr "Fel vid uppdatering av portinställningarna"
+
+#: libgphoto2_port/gphoto2-port-result.c:90
+msgid "Error setting the serial port speed"
+msgstr "Fel vid inställning av serieportens hastighet"
+
+#: libgphoto2_port/gphoto2-port-result.c:92
+msgid "Error clearing a halt condition on the USB port"
+msgstr "Fel vid rensning av stopptillstånd på USB-porten"
+
+#: libgphoto2_port/gphoto2-port-result.c:94
+msgid "Could not find the requested device on the USB port"
+msgstr "Kunde inte finna den begärda enheten på USB-porten"
+
+#: libgphoto2_port/gphoto2-port-result.c:96
+msgid "Could not claim the USB device"
+msgstr "Kunde inte göra anspråk på USB-enheten"
+
+#: libgphoto2_port/gphoto2-port-result.c:98
+msgid "Could not lock the device"
+msgstr "Kunde inte låsa enheten"
+
+#: libgphoto2_port/gphoto2-port-result.c:100
+msgid "libhal error"
+msgstr "libhal-fel"
+
+#: libgphoto2_port/gphoto2-port-result.c:102
+msgid "Unknown error"
+msgstr "Okänt fel"
+
+#: libgphoto2_port/gphoto2-port.c:59
+#, c-format
+msgid "The operation '%s' is not supported by this device"
+msgstr "Operationen ”%s” stöds inte av denna enhet"
+
+#: libgphoto2_port/gphoto2-port.c:60
+msgid "The port has not yet been initialized"
+msgstr "Porten har ännu inte blivit initierad"
+
+#: libgphoto2_port/gphoto2-port.c:686
+msgid "low"
+msgstr "låg"
+
+#: libgphoto2_port/gphoto2-port.c:687
+msgid "high"
+msgstr "hög"
+
+#: libgphoto2_port/gphoto2-port.c:1215
+msgid "No error description available"
+msgstr "Ingen felbeskrivning tillgänglig"
+
+#: disk/disk.c:149 disk/disk.c:150 disk/disk.c:228 disk/disk.c:229
+#: disk/disk.c:269 disk/disk.c:292
+#, c-format
+msgid "Media '%s'"
+msgstr "Media ”%s”"
+
+#: serial/unix.c:230
+#, c-format
+msgid "Could not lock device '%s'"
+msgstr "Kunde inte låsa enheten ”%s”"
+
+#: serial/unix.c:240 usbdiskdirect/linux.c:95
+#, c-format
+msgid "Device '%s' is locked by pid %d"
+msgstr "Enheten ”%s” är låst av pid %d"
+
+#: serial/unix.c:243 usbdiskdirect/linux.c:98
+#, c-format
+msgid "Device '%s' could not be locked (dev_lock returned %d)"
+msgstr "Enheten ”%s” kunde inte låsas (dev_unlock returnerade %d)"
+
+#: serial/unix.c:272
+#, c-format
+msgid "Device '%s' could not be unlocked."
+msgstr "Enheten ”%s” kunde inte låsas upp."
+
+#: serial/unix.c:284 usbdiskdirect/linux.c:127
+#, c-format
+msgid "Device '%s' could not be unlocked as it is locked by pid %d."
+msgstr "Enheten ”%s” kunde inte låsas upp eftersom den är låst av pid %d."
+
+#: serial/unix.c:288 usbdiskdirect/linux.c:131
+#, c-format
+msgid "Device '%s' could not be unlocked (dev_unlock returned %d)"
+msgstr "Enheten ”%s” kunde inte låsas upp (dev_lock returnerade %d)"
+
+#: serial/unix.c:346
+#, c-format
+msgid "Serial Port %i"
+msgstr "Serieport %i"
+
+#: serial/unix.c:359
+msgid "Serial Port Device"
+msgstr "Serieportsenhet"
+
+#: serial/unix.c:441
+#, c-format
+msgid "Failed to open '%s' (%s)."
+msgstr "Misslyckades med att öppna ”%s” (%s)."
+
+#: serial/unix.c:461
+#, c-format
+msgid "Could not close '%s' (%s)."
+msgstr "Kunde inte stänga ”%s” (%s)."
+
+#: serial/unix.c:517
+#, c-format
+msgid "Could not write to port (%s)"
+msgstr "Kunde inte skriva till porten (%s)"
+
+#: serial/unix.c:594
+msgid "Parity error."
+msgstr "Paritetsfel."
+
+#: serial/unix.c:598
+#, c-format
+msgid "Unexpected parity response sequence 0xff 0x%02x."
+msgstr "Oväntad paritetsvarsekvens 0xff 0x%02x."
+
+#: serial/unix.c:641
+#, c-format
+msgid "Unknown pin %i."
+msgstr "Okänd pinne %i."
+
+#: serial/unix.c:663
+#, c-format
+msgid "Could not get level of pin %i (%s)."
+msgstr "Kunde inte hämta nivån för pinne %i (%s)."
+
+#: serial/unix.c:699
+#, c-format
+msgid "Could not set level of pin %i to %i (%s)."
+msgstr "Kunde inte ställa in nivån för pinne %i till %i (%s)."
+
+# Hmm
+#: serial/unix.c:726
+#, c-format
+msgid "Could not flush '%s' (%s)."
+msgstr "Kunde inte tömma ut ”%s” (%s)."
+
+#: serial/unix.c:838
+#, c-format
+msgid "Could not set the baudrate to %d"
+msgstr "Kunde inte ställa in bithastigheten till %d"
+
+#: usbdiskdirect/linux.c:234
+msgid "USB Mass Storage direct IO"
+msgstr "USB-masslagring direkt I/O"
+
+#: usbdiskdirect/linux.c:285 usbscsi/linux.c:269
+#, c-format
+msgid "Failed to open '%s' (%m)."
+msgstr "Misslyckades med att öppna ”%s” (%m)."
+
+#: usbdiskdirect/linux.c:299 usbscsi/linux.c:297
+#, c-format
+msgid "Could not close '%s' (%m)."
+msgstr "Kunde inte stänga ”%s” (%m)."
+
+#: usbdiskdirect/linux.c:323
+#, c-format
+msgid "Could not seek to offset: %x on '%s' (%m)."
+msgstr "Kunde inte söka till position: %x på ”%s” (%m)."
+
+#: usbdiskdirect/linux.c:345
+#, c-format
+msgid "Could not write to '%s' (%m)."
+msgstr "Kunde inte skriva till ”%s” (%m)."
+
+#: usbdiskdirect/linux.c:366
+#, c-format
+msgid "Could not read from '%s' (%m)."
+msgstr "Kunde inte läsa från ”%s” (%m)."
+
+#: usb/libusb.c:264 libusb1/libusb1.c:401
+#, c-format
+msgid "Could not open USB device (%s)."
+msgstr "Kunde inte öppna USB-enhet (%s)."
+
+#: usb/libusb.c:277 libusb1/libusb1.c:410
+msgid "Camera is already in use."
+msgstr "Kameran används redan."
+
+#: usb/libusb.c:285
+#, c-format
+msgid "Could not detach kernel driver '%s' of camera device."
+msgstr "Kunde inte koppla loss kärndrivrutinen ”%s” från kameraenhet."
+
+#: usb/libusb.c:290 libusb1/libusb1.c:425
+msgid "Could not query kernel driver of device."
+msgstr "Kunde inte fråga kärndrivrutinen efter enheten."
+
+#: usb/libusb.c:299 libusb1/libusb1.c:432
+#, c-format
+msgid ""
+"Could not claim interface %d (%s). Make sure no other program (%s) or kernel "
+"module (such as %s) is using the device and you have read/write access to "
+"the device."
+msgstr ""
+"Kunde inte göra anspråk på gränssnittet %d (%s). Kontrollera att inget annat "
+"program (%s) eller kärnmodul (såsom %s) använder enheten och att du har "
+"skriv-/läsrättigheter för enheten."
+
+#: usb/libusb.c:311 libusb1/libusb1.c:443
+msgid "MacOS PTPCamera service"
+msgstr "MacOS-tjänst för PTPCamera"
+
+#: usb/libusb.c:313 libusb1/libusb1.c:445
+msgid "unknown libgphoto2 using program"
+msgstr "okänt program som använder libgphoto2"
+
+#: usb/libusb.c:330 libusb1/libusb1.c:514
+#, c-format
+msgid "Could not release interface %d (%s)."
+msgstr "Kunde inte släppa gränssnittet %d (%s)."
+
+#: usb/libusb.c:345 libusb1/libusb1.c:528
+#, c-format
+msgid "Could not reset USB port (%s)."
+msgstr "Kunde inte återställa USB-porten (%s)."
+
+#: usb/libusb.c:375
+#, c-format
+msgid "Could not close USB port (%s)."
+msgstr "Kunde inte stänga USB-porten (%s)."
+
+#: usb/libusb.c:637 libusb1/libusb1.c:971
+#, c-format
+msgid "Could not set config %d/%d (%s)"
+msgstr "Kunde inte ställa in konfiguration %d/%d (%s)"
+
+#: usb/libusb.c:668 libusb1/libusb1.c:1000
+#, c-format
+msgid "Could not set altsetting from %d to %d (%s)"
+msgstr "Kunde inte ställa in alternativinställning från %d till %d (%s)"
+
+#: usb/libusb.c:757 libusb1/libusb1.c:1165
+#, c-format
+msgid "The supplied vendor or product id (0x%x,0x%x) is not valid."
+msgstr ""
+"Den angivna tillverkar- eller produktidentiteten (0x%x,0x%x) är inte giltig."
+
+#: usb/libusb.c:828 usb/libusb.c:914 libusb1/libusb1.c:1134
+#: libusb1/libusb1.c:1226
+#, c-format
+msgid ""
+"Could not find USB device (vendor 0x%x, product 0x%x). Make sure this device "
+"is connected to the computer."
+msgstr ""
+"Kunde inte finna USB-enheten (tillverkare 0x%x, produkt 0x%x). Kontrollera "
+"att enheten är ansluten till datorn."
+
+#: usb/libusb.c:1207 libusb1/libusb1.c:1515
+#, c-format
+msgid ""
+"Could not find USB device (class 0x%x, subclass 0x%x, protocol 0x%x). Make "
+"sure this device is connected to the computer."
+msgstr ""
+"Kunde inte finna USB-enheten (klass 0x%x, underklass 0x%x, protokoll 0x%x). "
+"Kontrollera att enheten är ansluten till datorn."
+
+#: libusb1/libusb1.c:419
+msgid "Could not detach kernel driver of camera device."
+msgstr "Kunde inte koppla loss kärndrivrutinen från kameraenhet."
+
+#: libusb1/libusb1.c:537
+msgid "Could not reattach kernel driver of camera device."
+msgstr "Kunde inte återkoppla kärndrivrutinen från kameraenhet."
+
+#: usbscsi/linux.c:108
+#, c-format
+msgid "Device '%s' is locked by another app."
+msgstr "Enheten ”%s” är låst av ett annat program."
+
+#: usbscsi/linux.c:113
+#, c-format
+msgid "Failed to lock '%s' (%m)."
+msgstr "Misslyckades med att låsa ”%s” (%m)."
+
+#: usbscsi/linux.c:129
+#, c-format
+msgid "Failed to unlock '%s' (%m)."
+msgstr "Misslyckades med att låsa upp ”%s” (%m)."
+
+#: usbscsi/linux.c:230
+msgid "USB Mass Storage raw SCSI"
+msgstr "USB-masslagring rå SCSI"
+
+#: usbscsi/linux.c:341
+#, c-format
+msgid "Could not send scsi command to: '%s' (%m)."
+msgstr "Kunde inte skicka scsi-kommando till: ”%s” (%m)."
+
+#~ msgid "Called for filename '%s'."
+#~ msgstr "Frågade efter filnamnet \"%s\"."
+
+#~ msgid "Could not load '%s': '%s'."
+#~ msgstr "Kunde inte läsa in \"%s\": \"%s\"."
+
+#~ msgid "Could not find some functions in '%s': '%s'."
+#~ msgstr "Kunde inte hitta vissa funktioner i \"%s\": \"%s\"."
+
+#~ msgid "'%s' already loaded"
+#~ msgstr "\"%s\" redan inläst"
+
+#~ msgid "Could not load port driver list: '%s'."
+#~ msgstr "Kunde inte läsa in lista av portdrivrutiner: \"%s\"."
+
+#~ msgid "Loaded '%s' ('%s') from '%s'."
+#~ msgstr "Läste in \"%s\" (\"%s\") från \"%s\"."
+
+#~ msgid "Using ltdl to load io-drivers from '%s'..."
+#~ msgstr "Använder ltdl för att läsa in io-drivrutiner från \"%s\"..."
+
+#~ msgid "Counting entries (%i available)..."
+#~ msgstr "Räknar poster (%i tillgängliga)..."
+
+#~ msgid "%i regular entries available."
+#~ msgstr "%i vanliga poster tillgängliga."
+
+#~ msgid "Looking for path '%s' (%i entries available)..."
+#~ msgstr "Letar efter sökvägen \"%s\" (%i poster tillgängliga)..."
+
+#~ msgid "Starting regex search for '%s'..."
+#~ msgstr "Startar sökning med reguljärt uttryck efter \"%s\"..."
+
+#~ msgid "Trying '%s'..."
+#~ msgstr "Provar \"%s\"..."
+
+#~ msgid "regcomp failed"
+#~ msgstr "regcomp misslyckades"
+
+#~ msgid "re_match failed (%i)"
+#~ msgstr "re_match misslyckades (%i)"
+
+#~ msgid "regexec failed"
+#~ msgstr "regexec misslyckades"
+
+#~ msgid "Looking up entry '%s'..."
+#~ msgstr "Slår upp posten \"%s\"..."
+
+#~ msgid "Getting info of entry %i (%i available)..."
+#~ msgstr "Får information om posten %i (%i tillgängliga)..."
+
+#~ msgid "Creating new device..."
+#~ msgstr "Skapar ny enhet..."
+
+#~ msgid "Could not load '%s' ('%s')."
+#~ msgstr "Kunde inte läsa in \"%s\" (\"%s)\"."
+
+#~ msgid "Could not find 'gp_port_library_operations' in '%s' ('%s')"
+#~ msgstr "Kunde inte finna \"gp_port_library_operations\" i \"%s\" (\"%s\")"
+
+#~ msgid "Opening %s port..."
+#~ msgstr "Öppnar porten %s..."
+
+#~ msgid "Closing port..."
+#~ msgstr "Stänger port..."
+
+#~ msgid "Freeing port..."
+#~ msgstr "Frigör port..."
+
+#~ msgid "Writing %i=0x%x byte(s) to port..."
+#~ msgstr "Skriver %i=0x%x byte till port..."
+
+#~ msgid "Could only write %i out of %i byte(s)"
+#~ msgstr "Kunde endast skriva %i av totalt %i byte"
+
+#~ msgid "Reading %i=0x%x bytes from port..."
+#~ msgstr "Läser %i=0x%x byte från port..."
+
+#~ msgid "Could only read %i out of %i byte(s)"
+#~ msgstr "Kunde endast läsa %i ut av totalt %i byte"
+
+# Intressant engelska. Vad menas?
+#~ msgid "Reading %i=0x%x bytes from interrupt endpoint..."
+#~ msgstr "Läser %i=0x%x byte från avbruten ändpunkt..."
+
+# Intressant engelska igen..
+#~ msgid "Reading %i=0x%x bytes from interrupt endpoint (fast)..."
+#~ msgstr "Läser %i=0x%x byte från avbruten ändpunkt (snabbt)..."
+
+#~ msgid "Setting timeout to %i millisecond(s)..."
+#~ msgstr "Ställer in timeout till %i millisekund(er)..."
+
+#~ msgid "Getting timeout..."
+#~ msgstr "Får timeout..."
+
+#~ msgid "Current timeout: %i milliseconds"
+#~ msgstr "Aktuell timeout: %i millisekunder"
+
+#~ msgid "Setting settings..."
+#~ msgstr "Ställer in inställningar..."
+
+#~ msgid "Getting level of pin %i..."
+#~ msgstr "Hämtar nivån av pin %i..."
+
+#~ msgid "Level of pin %i: %i"
+#~ msgstr "Nivå av pin %i: %i"
+
+#~ msgid "Setting pin %i (%s: '%s') to '%s'..."
+#~ msgstr "Ställer in pin %i (%s: \"%s\") till \"%s\"..."
+
+#~ msgid "Sending break (%i milliseconds)..."
+#~ msgstr "Skickar avbrott (%i millisekunder)..."
+
+#~ msgid "Flushing port..."
+#~ msgstr "Spolar port..."
+
+#~ msgid "Clear halt..."
+#~ msgstr "Rensa stopp"
+
+#~ msgid "Writing message (request=0x%x value=0x%x index=0x%x size=%i=0x%x)..."
+#~ msgstr ""
+#~ "Skriver meddelande (begäran=0x%x värde=0x%x index=0x%x storlek=%i=0x%x)..."
+
+#~ msgid "Reading message (request=0x%x value=0x%x index=0x%x size=%i=0x%x)..."
+#~ msgstr ""
+#~ "Läser meddelande (begäran=0x%x värde=0x%x index=0x%x storlek=%i=0x%x)..."
+
+#~ msgid "msg_read"
+#~ msgstr "medd_läs"
+
+#~ msgid "Device has driver '%s' attached, detaching it now."
+#~ msgstr "Enheten har drivrutinen \"%s\" ansluten, kopplar loss den nu."
+
+#~ msgid ""
+#~ "USB device (vendor 0x%x, product 0x%x) is a mass storage device, and "
+#~ "might not function with gphoto2. Reference: %s"
+#~ msgstr ""
+#~ "USB-enheten (tillverkare 0x%x, produkt 0x%x) är en masslagringsenhet och "
+#~ "kanske inte fungerar med gphoto2. Referens: %s"
+
+#~ msgid "(unknown)"
+#~ msgstr "(okänt)"
+
+#~ msgid "Could not load any io-library because '%s' could not be opened (%m)"
+#~ msgstr ""
+#~ "Kunde inte ladda något io-bibliotek eftersom '%s' inte kunde öppnas (%m)"
+
+#, fuzzy
+#~ msgid "Could not find some functions in '%s' (%s)"
+#~ msgstr "Kunde inte stänga '%s' (%m)."
+
+#, fuzzy
+#~ msgid "Could not load list (%s)"
+#~ msgstr "Kunde inte stänga '%s' (%m)."
+
+#, fuzzy
+#~ msgid "Could not load '%s' ('%s')"
+#~ msgstr "Kunde inte stänga '%s' (%m)."
+
+#~ msgid "open"
+#~ msgstr "öppna"
+
+#~ msgid "close"
+#~ msgstr "stäng"
+
+#~ msgid "write"
+#~ msgstr "skriv"
+
+#~ msgid "read"
+#~ msgstr "läs"
+
+#~ msgid "check_int"
+#~ msgstr "check_int"
+
+#~ msgid "update"
+#~ msgstr "uppdatera"
+
+#~ msgid "get_pin"
+#~ msgstr "hämta_pin"
+
+#~ msgid "set_pin"
+#~ msgstr "sätt_pin"
+
+#~ msgid "send_break"
+#~ msgstr "sänd_avbrott"
+
+#~ msgid "flush"
+#~ msgstr "spola_ut"
+
+#~ msgid "find_device"
+#~ msgstr "hitta_enhet"
+
+#~ msgid "find_device_by_class"
+#~ msgstr "hitta_enhet_efter_klass"
+
+#~ msgid "msg_write"
+#~ msgstr "medd_skriv"

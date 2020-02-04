@@ -1,0 +1,276 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if you want to disabled debugging. */
+#undef DISABLE_DEBUGGING
+
+/* Define to 1 if translation of program messages to the user's native
+   language is requested. */
+#undef ENABLE_NLS
+
+/* The gettext domain we're using */
+#undef GETTEXT_PACKAGE
+
+/* Define to 1 if you have the <asm/io.h> header file. */
+#undef HAVE_ASM_IO_H
+
+/* Define if there is asm .symver support. */
+#undef HAVE_ASM_SYMVERS
+
+/* Define to 1 if you have the <byteswap.h> header file. */
+#undef HAVE_BYTESWAP_H
+
+/* The C compiler we're using */
+#undef HAVE_CC
+
+/* Define if the GNU dcgettext() function is already present or preinstalled.
+   */
+#undef HAVE_DCGETTEXT
+
+/* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_DIRENT_H
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the <endian.h> header file. */
+#undef HAVE_ENDIAN_H
+
+/* Define to 1 if you have the `endmntent' function. */
+#undef HAVE_ENDMNTENT
+
+/* Define to 1 if you have the <errno.h> header file. */
+#undef HAVE_ERRNO_H
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `flock' function. */
+#undef HAVE_FLOCK
+
+/* Define if the GNU gettext() function is already present or preinstalled. */
+#undef HAVE_GETTEXT
+
+/* Define if you have GNU regex. */
+#undef HAVE_GNU_REGEX
+
+/* Define if you have the iconv() function. */
+#undef HAVE_ICONV
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <ioctl-types.h> header file. */
+#undef HAVE_IOCTL_TYPES_H
+
+/* whether we compile with libexif support */
+#undef HAVE_LIBEXIF
+
+/* whether we use a version of libexif with ExifData.ifd[[]] */
+#undef HAVE_LIBEXIF_IFD
+
+/* Define to 1 if you have the `pthread' library (-lpthread). */
+#undef HAVE_LIBPTHREAD
+
+/* Define to 1 if you have the `regex' library (-lregex). */
+#undef HAVE_LIBREGEX
+
+/* whether we compile with libusb support */
+#undef HAVE_LIBUSB
+
+/* whether we compile with libusb-1.0 support */
+#undef HAVE_LIBUSB1
+
+/* Define if libusb-1.0 has libusb_strerror */
+#undef HAVE_LIBUSB_STRERROR
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define if you have dev_lock/lockdev based locking. */
+#undef HAVE_LOCKDEV
+
+/* Whether libltdl (of libtool fame) is present */
+#undef HAVE_LTDL
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the <mntent.h> header file. */
+#undef HAVE_MNTENT_H
+
+/* whether struct mnttag has mnt_mountp field */
+#undef HAVE_MNTTAB
+
+/* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
+#undef HAVE_NDIR_H
+
+/* whether we have regex.h */
+#undef HAVE_REGEX
+
+/* Define if you have TIOCM_TRS. */
+#undef HAVE_RTS_IOCTL
+
+/* Define to 1 if you have the <scsi/sg.h> header file. */
+#undef HAVE_SCSI_SG_H
+
+/* Whether you have serial support enabled */
+#undef HAVE_SERIAL
+
+/* Define to 1 if you have the `setmntent' function. */
+#undef HAVE_SETMNTENT
+
+/* Define to 1 if you have the <sgetty.h> header file. */
+#undef HAVE_SGETTY_H
+
+/* Define to 1 if you have the <sgtty.h> header file. */
+#undef HAVE_SGTTY_H
+
+/* Define to 1 if you have the `snprintf' function. */
+#undef HAVE_SNPRINTF
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#undef HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the `strerror' function. */
+#undef HAVE_STRERROR
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_DIR_H
+
+/* Define to 1 if you have the <sys/file.h> header file. */
+#undef HAVE_SYS_FILE_H
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/mntent.h> header file. */
+#undef HAVE_SYS_MNTENT_H
+
+/* Define to 1 if you have the <sys/mnttab.h> header file. */
+#undef HAVE_SYS_MNTTAB_H
+
+/* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
+   */
+#undef HAVE_SYS_NDIR_H
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#undef HAVE_SYS_PARAM_H
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#undef HAVE_SYS_SELECT_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <termios.h> header file. */
+#undef HAVE_TERMIOS_H
+
+/* Define to 1 if you have the <termio.h> header file. */
+#undef HAVE_TERMIO_H
+
+/* Define to 1 if you have the <ttold.h> header file. */
+#undef HAVE_TTOLD_H
+
+/* Define if you have ttylock based tty locking. */
+#undef HAVE_TTYLOCK
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Whether we have the va_copy() function */
+#undef HAVE_VA_COPY
+
+/* Define to 1 if you have the `vsnprintf' function. */
+#undef HAVE_VSNPRINTF
+
+/* Define as const if the declaration of iconv() needs const. */
+#undef ICONV_CONST
+
+/* Define as string containing a list of the iolibs */
+#undef IOLIB_LIST
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* gphoto development mailing list */
+#undef MAIL_GPHOTO_DEVEL
+
+/* gphoto translation mailing list */
+#undef MAIL_GPHOTO_TRANSLATION
+
+/* gphoto user mailing list */
+#undef MAIL_GPHOTO_USER
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* camera list with support status */
+#undef URL_DIGICAM_LIST
+
+/* gphoto project home page */
+#undef URL_GPHOTO_HOME
+
+/* gphoto github project page */
+#undef URL_GPHOTO_PROJECT
+
+/* jphoto home page */
+#undef URL_JPHOTO_HOME
+
+/* information about using USB mass storage */
+#undef URL_USB_MASSSTORAGE
+
+/* Version number of package */
+#undef VERSION
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#undef const
+
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#undef inline
+#endif
+
+/* __va_copy() was the originally proposed name */
+#undef va_copy

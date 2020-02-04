@@ -1,0 +1,20 @@
+# -*- Makefile -*-
+
+vcameradir = $(datadir)/$(PACKAGE)/$(VERSION)/vcamera
+vcamera_DATA = vusb/README.txt
+EXTRA_DIST += vusb/README.txt
+
+EXTRA_LTLIBRARIES += vusb.la
+
+vusb_la_LDFLAGS = $(iolib_ldflags)
+vusb_la_CPPFLAGS = \
+	-DVCAMERADIR=\"$(vcameradir)\" \
+	$(AM_CPPFLAGS) \
+	$(INTL_CFLAGS) \
+        $(LIBEXIF_CFLAGS) \
+	$(CPPFLAGS)
+vusb_la_DEPENDENCIES = $(iolib_dependencies)
+vusb_la_LIBADD = $(iolib_libadd)
+vusb_la_LIBADD += $(INTLLIBS) $(LIBEXIF_LIBS)
+
+vusb_la_SOURCES = vusb/vusb.c vusb/vcamera.c vusb/vcamera.h

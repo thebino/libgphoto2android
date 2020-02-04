@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Photobooth</string>
+    <string name="app_name">A Camera</string>
+
+    <string name="main_detect_button_text">Detect</string>
 </resources>

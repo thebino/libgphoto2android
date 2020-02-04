@@ -1,0 +1,251 @@
+Below are the addresses of persons working on specific parts of gphoto2.
+If you have specific questions (like why doesn't my HP C20 answer with 0x20
+if I send 0xff as described in whatever/file.c), those are the guys to ask.
+
+libgphoto2_port:
+	Marcus Meissner <marcus@jet.franken.de>
+	Lutz Müller <lutz@users.sourceforge.net> (old maintainer)
+	Scott Fritzinger <scottf@unr.edu>	(old maintainer)
+	Hubert Figuiere <hfiguiere@teaser.fr>	(old maintainer)
+
+libgphoto2:
+	Marcus Meissner <marcus@jet.franken.de>
+	Lutz Müller <lutz@users.sourceforge.net> (old maintainer)
+	Scott Fritzinger <scottf@unr.edu>	(old maintainer)
+	Hubert Figuiere <hfiguiere@teaser.fr>	(old maintainer)
+
+--------------------------------------------------------------------------------
+				     PORTS
+--------------------------------------------------------------------------------
+
+OS/2:
+	Bart van Leeuwen <bart_van_leeuwen@netage.nl>
+*BSD:
+	Arnaud Launay <asl@launay.org>
+
+--------------------------------------------------------------------------------
+				 CAMERA DRIVERS
+--------------------------------------------------------------------------------
+
+camlibs/aox:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/barbie:
+	Scott Fritzinger <scottf@unr.edu>
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/benq:
+	Till Adam <till@adam-lilienthal.de>
+
+camlibs/canon:
+	Philippe Marzouk <philm@users.sourceforge.net>
+
+camlibs/clicksmart310:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/digigr8:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/digita:
+	Johannes Erdfelt <johannes@erdfelt.com>
+
+camlibs/dimera:
+	Dan Fandrich <dan@coneharvesters.com>
+
+camlibs/enigma13:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/gsmart:
+	Till Adam <till@adam-lilienthal.de>
+
+camlibs/gsmart300:
+	Jérôme Lodewyck <lodewyck@clipper.ens.fr>
+	Till Adam <till@adam-lilienthal.de>
+
+camlibs/hp215:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/iclick:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/jamcam:
+	Chris Pinkham <cpinkham@infi.net>
+
+camlibs/jd11:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/jl2005a:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/jl2005c:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/konica:
+	Lutz Müller <lutz@users.sf.net>
+
+camlibs/kodak/dc120:
+	Scott Fritzinger <scottf@unr.edu>
+
+camlibs/kodak/dc210:
+	Michael Koltan <koltan@gmx.de>
+
+camlibs/kodak/dc240:
+	Hubert Figuiere <hfiguiere@teaser.fr>
+
+camlibs/largan/lmini
+	Hubert Figuiere <hfiguiere@teaser.fr>
+
+camlibs/mars
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/mustek:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/panasonic
+	Mariusz Zynel <mariusz@math.uwb.edu.pl>
+
+camlibs/panasonic/coolshot:
+	Chris Pinkham <cpinkham@infi.net>
+
+camlibs/pccam300:
+	Miah Gregory <mace@darksilence.net>
+
+camlibs/pccam600:
+	Peter Kajberg <pbk@odense.kollegienet.dk>
+
+camlibs/polaroid/pdc320.c:
+	Nathan Stenzel <nathanstenzel@users.sourceforge.net>
+
+camlibs/polaroid/pdc640.c:
+	Chris Byrne <adapt.ihug.co.nz>
+
+camlibs/polaroid/pdc700.c:
+	Greg Ingram <ingram@symsys.com>
+
+camlibs/ptp2:
+	Marcus Meissner <marcus@jet.franken.de> (current maintainer)
+	Mariusz Woloszyn <emsi@ipartners.pl> (previous maintainer)
+
+camlibs/ricoh/g3:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/samsung:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/sierra:
+	Patrick Mansfield <patmans@users.sourceforge.net>
+	Scott Fritzinger <scottf@unr.edu>
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/sipix:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/smal:
+	Lee Benfield <lee@benf.org>
+
+camlibs/sonix:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/sonydscf1:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/sonydscf55:
+	Marcus Meissner <marcus@jet.franken.de>
+	Raymond Penners <raymond@dotsphinx.com>
+
+camlibs/soundvision:
+	Vince Weaver <vince@deater.net>
+
+camlibs/spca50x:
+	Till Adam <till@adam-lilienthal.de>
+
+camlibs/sq905:
+	Theodore Kilgore <kilgota@auburn.edu>
+
+camlibs/stv0674:
+	Vincent Sanders <vince@kyllikki.org>
+
+camlibs/stv0680:
+	Carsten Weinholz <cweinholz@users.sourceforge.net>
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/sx330z:
+	Dominik Kuhlen <kinimod@users.sourceforge.net>
+
+camlibs/topfield:
+	Marcus Meissner <marcus@jet.franken.de>
+
+camlibs/toshiba/pdrm11
+	David Hogue <david@jawa.gotdns.org>
+
+--------------------------------------------------------------------------------
+				   FRONTENDS
+--------------------------------------------------------------------------------
+
+digikam (http://digikam.sourceforge.net):
+	KDE frontend
+	Renchi Raju <renchi@green.tam.uiuc.edu>
+
+f-spot:	http://f-spot.org/Main_Page
+
+gthumb: The GNOME Team.
+
+kamera: KDE integration (konqueror)
+	Marcus Meissner <marcus@jet.franken.de>
+	Ilya Konstantinov <future@shiny.co.il>
+
+flphoto:
+	fltk based photo importer (unmaintained)
+
+gtkam (http://www.topfrose.de):
+	Simple GTK front-end.
+	Lutz Müller <lutz@users.sourceforge.net>
+
+GnoCam (http://www.uni-karlsruhe.de/~urc8/GnoCam):
+	GNOME integration (nautilus)
+	Lutz Müller <lutz@users.sf.net>
+
+QtKam (?):
+	Front-end for KDE
+	Remko Troncon <spike@kotnet.org>
+
+SANE (?):
+	If configured with --with-gphoto2.
+	Pete Fales <psfales@lucent.com>
+
+Wine (TWAIN):
+	Marcus Meissner <marcus@jet.franken.de>
+
+
+--------------------------------------------------------------------------------
+				    SUPPORT
+--------------------------------------------------------------------------------
+
+Build system up to 'configure' (i.e. 'autogen.sh'):
+	Marcus Meissner <marcus@jet.franken.de>
+
+Bug reports:
+	Please use the sourceforge tracker at http://sf.net/projects/gphoto .
+
+Releases:
+	Marcus Meissner <marcus@jet.franken.de>
+
+Packaging (RPM):
+	Hans Ulrich Niedermann <gp@n-dimensional.de>
+
+Translation:
+	We use http://translationproject.org/
+	packages: libgphoto2, libgphoto2_port, gphoto2, gtkam
+
+	Marcus Meissner <marcus@jet.franken.de>
+
+Manual pages:
+	gphoto2 command-line app: Tim Waugh <twaugh@redhat.com>
+
+Other documentation (gphoto2.xml manual):
+	Marcus Meissner <marcus@jet.franken.de>
+        Hans Ulrich Niedermann <gp@n-dimensional.de>
+
+Mailing lists:
+	Marcus Meissner <marcus@jet.franken.de>
+	Hans Ulrich Niedermann <gp@n-dimensional.de>

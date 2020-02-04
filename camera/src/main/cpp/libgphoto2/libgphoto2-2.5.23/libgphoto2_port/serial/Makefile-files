@@ -1,0 +1,13 @@
+# -*- Makefile -*-
+
+EXTRA_LTLIBRARIES += serial.la
+
+serial_la_LDFLAGS = $(iolib_ldflags)
+serial_la_CPPFLAGS = \
+	$(AM_CPPFLAGS) \
+	$(INTL_CFLAGS) \
+	$(CPPFLAGS)
+serial_la_DEPENDENCIES = $(iolib_dependencies)
+serial_la_LIBADD = $(iolib_libadd)
+serial_la_LIBADD += $(SERIAL_LIBS) $(INTLLIBS)
+serial_la_SOURCES = serial/unix.c

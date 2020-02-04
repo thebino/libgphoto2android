@@ -1,0 +1,15 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+VERSION=@VERSION@
+driverdir=@camlibdir@
+
+Name: libgphoto2
+Description: Library for easy access to digital cameras
+URL: http://gphoto.org/proj/libgphoto2/
+Version: @VERSION@
+Requires: libgphoto2_port >= 0.10.0
+Requires.private: @REQUIREMENTS_FOR_LIBEXIF@
+Libs: -L${libdir} -lgphoto2 -lm
+Cflags: -I${includedir}/gphoto2

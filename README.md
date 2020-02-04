@@ -15,19 +15,60 @@ which main purpose is to connect and remote control digital cameras.
 
 ## Installation
 
-Docker based android build including native build with android ndk:
-
+run docker image with android ndk
 ```sh
-docker run -v "$PWD":/app libgphoto2android
+docker run --rm -it -v ${PWD}:/root android-build-environment:0.0.6
 ```
+
+
+create a standalone toolchain into `my-toolchain`
+```sh
+$ANDROID_NDK_HOME/build/tools/make-standalone-toolchain.sh --arch=arm --install-dir=my-toolchain --force
+python3 /usr/local/android-sdk/ndk/20.0.5594570/build/tools/make_standalone_toolchain.py --arch arm --install-dir my-toolchain --force
+```
+
+
+add created toolchain to path
+```sh
+export PATH=$PATH:`pwd`/my-toolchain/bin
+```
+
+
+download and unzip libgphoto2 
+```sh
+tar -xvf ../libgphoto2-latest.tar.bz2 
+```
+
+
+set environment vars for cross-compile
+```sh
+target_host=arm-linux-androideabi
+export AR=$target_host-ar
+export AS=$target_host-clang
+export CC=$target_host-clang
+export CXX=$target_host-clang++
+export LD=$target_host-ld
+export STRIP=$target_host-strip
+export CFLAGS="-fPIE -fPIC"
+export LDFLAGS="-pie"
+```
+
+
+change into libgphoto2 directory and run configure command
+```sh
+./configure --host=arm-linux-androideabi --prefix=/root/libgphoto2-2.5.23/output --with-sysroot="/usr/local/android-sdk/ndk/20.0.5594570/sysroot/usr/lib/arm-linux-androideabi/"
+```
+
+build library
+```sh
+make install
+```
+
 
 ## Release History
 
-* 0.1.1
-    * CHANGE: Rename `getVersion()` to `getLibraryVersion()`
 * 0.1.0
-    * The first proper release
-    * ADD: Add `create`, `getVersion()` and `capture()`
+    * ADD: Add `getLibraryVersion` and `create()`
 * 0.0.1
     * First draft
 

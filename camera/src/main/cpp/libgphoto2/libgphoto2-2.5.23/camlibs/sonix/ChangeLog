@@ -1,0 +1,97 @@
+2008-04-20   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: AHD Bayer and white_balance() in use.
+	* sonix.[c,h]:   white_balance() and related stuff added. 
+
+2008-03-24   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Previous change reverted. Bad idea.
+
+2008-02-16   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Camera ID byte saved in rawfile footers. 
+
+2007-12-27   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: added Wild Planet Digital Spy Camera, contributed by 
+		     Jorma Laaksonen <jorma.laaksonen@tkk.fi>
+	* sonix.c:   Features of new camera listed. 
+
+2007-12-18   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Processing of AVI output changed, so that output is 
+		     written to file one frame at a time, to reduce 
+		     memory footprint. 
+
+2007-12-09   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Added Genius Smart 300. Thanks to 
+		     Norayr Chilingaryan <gnorayr@gmail.com>
+		     for reporting the camera and for testing. New camera 
+		     uses optional compression and uses an offset in the 
+		     still photos, but not in frames for AVI output. 
+		     Also changed from using the USB Product number to
+		     distinguish between camera models and will use the 
+		     firmware version code reported during sonix_init()
+		     instead. So the ID-ing of cameras is moved from 
+		     camera_init() to sonix_init()
+		     Also cleaned up the camera_capture function. 
+	* sonix.c:   Incorporated above changes in sonix_init().
+	* sonix.h:   Changed fwversion variable from 1 byte to the 4
+		     actually reported. 
+
+2007-10-16   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Several Sakar cameras added
+
+2007-06-25   Theodore Kilgore <kilgota@auburn.edu>
+	* library.c: Clean up signedness warnings
+	* sonix.c:   ditto
+
+
+2007-05-05   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Added Mini Shotz ms-350. Thanks to 
+		     Gines Carrascal de las Heras <gines_carrascal@yahoo.es>
+		     for reporting the camera, and for testing the needed 
+		     code changes to support the camera. 
+	
+	* sonix.c: functions added for reversing byte strings, rows, and 
+		   columns.
+	* sonix.h: the new functions declared. 
+	* README.sonix: Updated.
+
+
+2006-11-19   Marcus Meissner  <marcus@jet.franken.de>
+
+	* sonix.c: made 3 functions static
+
+2006-08-17   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Workaround for gtkam problem if camera empty.
+
+	* sonix.c: indentation inside for() statement.
+
+
+
+2006-08-17   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Workaround for gtkam problems with Sakar 11199.
+
+	* sonix.c: Workaround for gtkam problems with Sakar 11199.
+
+	* sonix.h: Workaround for gtkam problems with Sakar 11199.
+
+	* README: Revisions.
+
+	* sakar-avi-header.h: Forgot to commit this. Here it is!
+
+
+
+2006-08-14   Theodore Kilgore <kilgota@auburn.edu>
+
+	* library.c: Added Sakar Digital Keychain 11199. 
+		     New functionality to support new camera.
+
+	* sonix.c: Rewritten to support new camera.
+
+	* sonix.h: Rewritten to support new camera.
+
+	* README: Revised.
+
+2005-06-09   Theodore Kilgore <kilgota@auburn.edu>
+
+	First check-in.
